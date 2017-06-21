@@ -3,7 +3,7 @@ $incpath = dirname(__FILE__) . '/Cart/';
 require_once($incpath . 'cartDetails.php');
 require_once('authentication.php');
 require_once('db.php');
-$authenticate = new Authentication();
+//$authenticate = new Authentication();
 $fileName     = basename(__FILE__, ".php");
 $fileName     = $fileName;
 $fileNameLast = substr($fileName, -1);
@@ -19,7 +19,7 @@ if ($fileNameLast == 'y') {
 $method   = ($_POST) ? $_POST : $_GET;
 $cartType = $method['type'];
 
-$userRole = $authenticate->authenticate($_POST['username']);
+$userRole = $GLOBALS['authenticate']->authenticate($_POST['username']);
 if (($userRole == 1) || ($userRole == 2)) {
     switch ($cartType) {
         case "addCart":
