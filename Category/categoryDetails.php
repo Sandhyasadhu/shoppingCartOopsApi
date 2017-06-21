@@ -80,7 +80,6 @@ class CategoryDetails
     
     function listCategories()
     {
-        $GLOBALS['db']->debug_mode=true;
         $categoryListAll = array();
         $count           = $GLOBALS['db']->query("select * from " . $GLOBALS['table'] . "  order by  name asc");
         while ($categoryList = $GLOBALS['db']->getrec()) {
