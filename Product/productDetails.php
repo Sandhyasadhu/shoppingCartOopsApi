@@ -9,6 +9,7 @@ class ProductDetails
     
     function addProduct($name, $description, $price, $discount, $categoryId)
     {
+        if($name!='' && $description!='' && $price!='' && $discount!='' && $categoryId!=''){
         $productField = array(
             "category_id" => $categoryId,
             "name" => $name,
@@ -25,6 +26,21 @@ class ProductDetails
         } else {
             $output['iserr']   = 0;
             $output['message'] = 'Invalid Entry';
+        }
+        }else{
+             $output['iserr']   = 0;
+            if($name=='')
+                $output['message'] = 'Invalid Entry Name';
+            if($description=='')
+                $output['message']. = 'Invalid Entry Description';
+            if($price=='')
+                $output['message']. = 'Invalid Entry Price';
+            if($discount=='')
+                $output['message']. = 'Invalid Entry Discount';
+            if($categoryId=='')
+                $output['message']. = 'Invalid Entry CategoryId';
+            
+         
         }
         echo json_encode($output);
         exit();
