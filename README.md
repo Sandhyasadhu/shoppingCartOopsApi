@@ -14,21 +14,21 @@ CATEGORY:
   ListCategories : https://sheltered-cove-38483.herokuapp.com/category.php?type=listCategories&username=bs.sandhya.in
 
 Product
-   AddProduct    : https://sheltered-cove-38483.herokuapp.com/category.php?type=addProduct&username=bs.sandhya.in
-   UpdateProduct : https://sheltered-cove-38483.herokuapp.com/category.php?type=updateProduct&username=bs.sandhya.in
-   ReadProduct   : https://sheltered-cove-38483.herokuapp.com/category.php?type=readProduct&username=bs.sandhya.in
-   ListProducts  : https://sheltered-cove-38483.herokuapp.com/category.php?type=listProducts&username=bs.sandhya.in 
+   AddProduct    : https://sheltered-cove-38483.herokuapp.com/product.php?type=addProduct&username=bs.sandhya.in
+   UpdateProduct : https://sheltered-cove-38483.herokuapp.com/product.php?type=updateProduct&username=bs.sandhya.in
+   ReadProduct   : https://sheltered-cove-38483.herokuapp.com/product.php?type=readProduct&username=bs.sandhya.in
+   ListProducts  : https://sheltered-cove-38483.herokuapp.com/product.php?type=listProducts&username=bs.sandhya.in 
 
 CART:  
-  AddCart    : https://sheltered-cove-38483.herokuapp.com/category.php?type=addCart&username=bs.sandhya.in
-  UpdateCart : https://sheltered-cove-38483.herokuapp.com/category.php?type=updateCart&username=bs.sandhya.in
-  ReadCart   : https://sheltered-cove-38483.herokuapp.com/category.php?type=readCart&username=bs.sandhya.in
-  ListCarts  : https://sheltered-cove-38483.herokuapp.com/category.php?type=listCarts&username=bs.sandhya.in
-  ShowCarts  : https://sheltered-cove-38483.herokuapp.com/category.php?type=showCarts&username=bs.sandhya.in
-  GetCartTotal : https://sheltered-cove-38483.herokuapp.com/category.php?type=getCartTotal&username=bs.sandhya.in
-  GetTotalDis  : https://sheltered-cove-38483.herokuapp.com/category.php?type=getCartTotalDiscount&username=bs.sandhya.in
-  GetTotalTax  : https://sheltered-cove-38483.herokuapp.com/category.php?type=getCartTotalTax&username=bs.sandhya.in
-  AddUser      : https://sheltered-cove-38483.herokuapp.com/category.php?type=addUser&username=bs.sandhya.in
+  AddCart    : https://sheltered-cove-38483.herokuapp.com/cart.php?type=addCart&username=bs.sandhya.in
+  UpdateCart : https://sheltered-cove-38483.herokuapp.com/cart.php?type=updateCart&username=bs.sandhya.in
+  ReadCart   : https://sheltered-cove-38483.herokuapp.com/cart.php?type=readCart&username=bs.sandhya.in
+  ListCarts  : https://sheltered-cove-38483.herokuapp.com/cart.php?type=listCarts&username=bs.sandhya.in
+  ShowCarts  : https://sheltered-cove-38483.herokuapp.com/cart.php?type=showCarts&username=bs.sandhya.in
+  GetCartTotal : https://sheltered-cove-38483.herokuapp.com/cart.php?type=getCartTotal&username=bs.sandhya.in
+  GetTotalDis  : https://sheltered-cove-38483.herokuapp.com/cart.php?type=getCartTotalDiscount&username=bs.sandhya.in
+  GetTotalTax  : https://sheltered-cove-38483.herokuapp.com/cart.php?type=getCartTotalTax&username=bs.sandhya.in
+  AddUser      : https://sheltered-cove-38483.herokuapp.com/cart.php?type=addUser&username=bs.sandhya.in
 
 
 DB:Postgresql
