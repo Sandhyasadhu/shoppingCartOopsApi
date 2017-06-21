@@ -15,6 +15,7 @@ class CartDetails
     
     function addCart($name, $total, $totalDiscount, $totalWithDiscount, $totalTax, $totalWithTax, $grandTotal, $productId, $userId)
     {
+        if($name!='' && $total!='' && $totalDiscount!='' && $totalWithDiscount!='' && $totalTax!='' && $totalWithTax!='' && $grandTotal!='' && $productId!='' && $userId!=''){
         $cartField = array(
             "user_id" => $userId,
             "product_id" => $productId,
@@ -34,6 +35,27 @@ class CartDetails
         } else {
             $output['iserr']   = 0;
             $output['message'] = 'Invalid Entry';
+        }
+        }else{
+            $output['iserr']   = 0;
+            if($name=='')
+               $output['message']['Name'] = 'Invalid Entry Name';
+            if($total=='')
+               $output['message']['Total'] = 'Invalid Entry Total';
+            if($totalDiscount=='')
+               $output['message']['Discount'] = 'Invalid Entry Total Discount';
+            if($totalWithDiscount=='')
+               $output['message']['WithDiscount'] = 'Invalid Entry Total with Discount';
+            if($totalTax=='')
+               $output['message']['TotalTax'] = 'Invalid Entry Total Tax';
+            if($totalWithTax=='')
+               $output['message']['TotalWithTax'] = 'Invalid Entry Total with Tax';
+            if($grandTotal=='')
+               $output['message']['GrandTotal'] = 'Invalid Entry Grand Total';
+            if($productId=='')
+               $output['message']['ProductId'] = 'Invalid Entry Product Id ';
+             if($userId=='')
+               $output['message']['UserId'] = 'Invalid Entry User Id';
         }
         echo json_encode($output);
         exit();
