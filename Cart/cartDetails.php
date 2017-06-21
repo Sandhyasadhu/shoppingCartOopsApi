@@ -98,7 +98,7 @@ class CartDetails
     function listCarts()
     {
         $cartListAll = array();
-        $count       = $GLOBALS['db']->query("select * from " . $GLOBALS['table'] . " where 1 order by name asc");
+        $count       = $GLOBALS['db']->query("select * from " . $GLOBALS['table'] . " order by name asc");
         while ($cartList = $GLOBALS['db']->getrec()) {
             $cartListAll[] = $cartList;
         }
