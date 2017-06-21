@@ -34,7 +34,7 @@ class ProductDetails
             if($description=='')
                 $output['message'] = 'Invalid Entry Description';
             if($price=='')
-                $output['message'] = 'Invalid Entry Price';
+                $output['message']. = 'Invalid Entry Price';
             if($discount=='')
                 $output['message'] = 'Invalid Entry Discount';
             if($categoryId=='')
