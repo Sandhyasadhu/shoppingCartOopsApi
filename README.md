@@ -9,86 +9,86 @@ DB:POSTgresql
 
 authentication check:
 input: 
-username
+username,
 Output:
-	$output['iserr'] 			= 0; // 0 is fail condition user cannot match
-	$output['message'] 			= 'Invalid User';
-Rules: category and product process by only admin(role_id=1)
-Rules: cart process by both user or admin(role_id=1or role_id=2)
-
+	$output['iserr'] 			= 0; // 0 is fail condition user cannot match,
+	$output['message'] 			= 'Invalid User',
+Rules: category and product process by only admin(role_id=1),
+Rules: cart process by both user or admin(role_id=1or role_id=2),
+,
 Method:Category
 Type=addCategory
 Input:
-	name
-	description
-	tax
+	name,
+	description,
+	tax,
 Output:
-	$output['iserr'] 			= 1; // 1 is successfull
-	$output['message'] 		= 'Successfully Category Add';
-$output['iserr'] 			= 0; // 0 is fail
-	$output['message'] 		= 'Invalid Entry';
+	$output['iserr'] 			= 1; // 1 is successfull,
+	$output['message'] 		= 'Successfully Category Add',
+$output['iserr'] 			= 0; // 0 is fail,
+	$output['message'] 		= 'Invalid Entry',
 2. Type= updateCategory
 Input:
 	name
 description
 tax
 Output:
-	$output['iserr'] 			= 1; // 1 is successfull
-	$output['message'] 		= 'Successfully Category Update;
-$output['iserr'] 			= 0; // 0 is fail
+	$output['iserr'] 			= 1; // 1 is successfull,
+	$output['message'] 		= 'Successfully Category Update,
+$output['iserr'] 			= 0; // 0 is fail,
 	$output['message'] 		= 'Invalid Entry';
 
 3. Type= deleteCategory
 Input:
-	categoryDeleteId
+	categoryDeleteId,
 Output:
-	$output['iserr'] 			= 1; // 1 is successfull
-	$output['message'] 		= 'Successfully Category Delete;
-$output['iserr'] 			= 0; // 0 is fail
-	$output['message'] 		= 'Invalid Entry';
+	$output['iserr'] 			= 1; // 1 is successfull,
+	$output['message'] 		= 'Successfully Category Delete,
+$output['iserr'] 			= 0; // 0 is fail,
+	$output['message'] 		= 'Invalid Entry',
 4. Type= readCategory
 Input:
 	categoryReadId
 Output:
-	$output['iserr'] 			= 1; // 1 is successfull
-	$output['message'] 		= 'Successfully Category List;
-$output['iserr'] 			= 0; // 0 is fail
-	$output['message'] 		= 'Invalid Entry';
+	$output['iserr'] 			= 1; // 1 is successfull,
+	$output['message'] 		= 'Successfully Category List,
+$output['iserr'] 			= 0; // 0 is fail,
+	$output['message'] 		= 'Invalid Entry',
 5. Type= listCategories
 Input:
 	null
 Output:
-	$output['iserr'] 			= 1; // 1 is successfull
-	$output['message'] 		= 'Successfully Category List;
-$output['iserr'] 			= 0; // 0 is fail
-	$output['message'] 		= 'Invalid Entry';
+	$output['iserr'] 			= 1; // 1 is successfull,
+	$output['message'] 		= 'Successfully Category List,
+$output['iserr'] 			= 0; // 0 is fail,
+	$output['message'] 		= 'Invalid Entry',
 
 
 Method:Product
 1.Type= addProduct
 Input:
-	name
-description
-price
-discount
-category_id
+	name,
+	description,
+	price,
+	discount,
+	category_id,
 Output:
-	$output['iserr'] 			= 1; // 1 is successfull
-	$output['message'] 		= 'Successfully Product Add';
-$output['iserr'] 			= 0; // 0 is fail
-	$output['message'] 		= 'Invalid Entry';
+	$output['iserr'] 			= 1; // 1 is successfull,
+	$output['message'] 		= 'Successfully Product Add',
+$output['iserr'] 			= 0; // 0 is fail,
+	$output['message'] 		= 'Invalid Entry',
 2. Type= updateProduct
 Input:
-	name
-description
-price
-discount
-productUpdateId
+	name,
+	description,
+	price,
+	discount,
+	productUpdateId,
 Output:
-	$output['iserr'] 			= 1; // 1 is successfull
-	$output['message'] 		= 'Successfully Product Update;
-$output['iserr'] 			= 0; // 0 is fail
-	$output['message'] 		= 'Invalid Entry';
+	$output['iserr'] 			= 1; // 1 is successfull,
+	$output['message'] 		= 'Successfully Product Update,
+$output['iserr'] 			= 0; // 0 is fail,
+	$output['message'] 		= 'Invalid Entry',
 
 3. Type= deleteProduct
 Input:
@@ -100,123 +100,123 @@ $output['iserr'] 			= 0; // 0 is fail
 	$output['message'] 		= 'Invalid Entry';
 4. Type= readProduct
 Input:
-	productReadId
+	productReadId,
 Output:
-	$output['iserr'] 			= 1; // 1 is successfull
-	$output['message'] 		= 'Successfully Product  List;
-$output['iserr'] 			= 0; // 0 is fail
-	$output['message'] 		= 'Invalid Entry';
+	$output['iserr'] 			= 1; // 1 is successfull,
+	$output['message'] 		= 'Successfully Product  List,
+$output['iserr'] 			= 0; // 0 is fail,
+	$output['message'] 		= 'Invalid Entry',
 5. Type= listProducts
 Input:
 	null
 Output:
-	$output['iserr'] 			= 1; // 1 is successfull
-	$output['message'] 		= 'Successfully Category List;
-$output['iserr'] 			= 0; // 0 is fail
-	$output['message'] 		= 'Invalid Entry';
+	$output['iserr'] 			= 1; // 1 is successfull,
+	$output['message'] 		= 'Successfully Category List,
+$output['iserr'] 			= 0; // 0 is fail,
+	$output['message'] 		= 'Invalid Entry',
 
 
 Method:Cart
 1.Type= addCart
 Input:
-	name
-total
-total_discount
-total_with_discount_id
-total_tax
-total_with_tax
-grand_total
-product_id
-user_id
+	name,
+	total,
+	total_discount,
+	total_with_discount_id,
+	total_tax,
+	total_with_tax,
+	grand_total,
+	product_id,
+	user_id,
 Output:
-	$output['iserr'] 			= 1; // 1 is successfull
-	$output['message'] 		= 'Successfully Cart Add';
-$output['iserr'] 			= 0; // 0 is fail
+	$output['iserr'] 			= 1; // 1 is successfull,
+	$output['message'] 		= 'Successfully Cart Add',
+$output['iserr'] 			= 0; // 0 is fail,
 	$output['message'] 		= 'Invalid Entry';
 2. Type= updateCart
 Input:
-	name
-total
-total_discount
-total_with_discount_id
-total_tax
-total_with_tax
-grand_total
-cartUpdateId
+	name,
+	total,
+	total_discount,
+	total_with_discount_id,
+	total_tax,
+	total_with_tax,
+	grand_total,
+	cartUpdateId,
 Output:
-	$output['iserr'] 			= 1; // 1 is successfull
+	$output['iserr'] 			= 1; // 1 is successfull,
 	$output['message'] 		= 'Successfully Cart Update;
-$output['iserr'] 			= 0; // 0 is fail
+$output['iserr'] 			= 0; // 0 is fail,
 	$output['message'] 		= 'Invalid Entry';
 
 3. Type= deleteCart
 Input:
-	cartDeleteId
+	cartDeleteId,
 Output:
-	$output['iserr'] 			= 1; // 1 is successfull
+	$output['iserr'] 			= 1; // 1 is successfull,
 	$output['message'] 		= 'Successfully Cart Delete;
-$output['iserr'] 			= 0; // 0 is fail
+$output['iserr'] 			= 0; // 0 is fail,
 	$output['message'] 		= 'Invalid Entry';
 4. Type= readCart
 Input:
-	cartReadId
+	cartReadId,
 Output:
-	$output['iserr'] 			= 1; // 1 is successfull
+	$output['iserr'] 			= 1; // 1 is successfull,
 	$output['message'] 		= 'Successfully Cart  List;
-$output['iserr'] 			= 0; // 0 is fail
+$output['iserr'] 			= 0; // 0 is fail,
 	$output['message'] 		= 'Invalid Entry';
 5. Type= listCarts
 Input:
-	null
+	null,
 Output:
-	$output['iserr'] 			= 1; // 1 is successfull
+	$output['iserr'] 			= 1; // 1 is successfull,
 	$output['message'] 		= 'Successfully Category List;
-$output['iserr'] 			= 0; // 0 is fail
+$output['iserr'] 			= 0; // 0 is fail,
 	$output['message'] 		= 'Invalid Entry';
 
 6. Type= showCarts
 Input:
-	user_id
+	user_id,
 Output:
-	$output['iserr'] 			= 1; // 1 is successfull
+	$output['iserr'] 			= 1; // 1 is successfull,
 	$output['message'] 		= 'Successfully Category List;
-$output['iserr'] 			= 0; // 0 is fail
+$output['iserr'] 			= 0; // 0 is fail,
 	$output['message'] 		= 'Invalid Entry';
 
 7. Type= getCartTotal
 Input:
-	user_id
+	user_id,
 Output:
-	$output['iserr'] 			= 1; // 1 is successfull
+	$output['iserr'] 			= 1; // 1 is successfull,
 	$output['message'] 		= 'Successfully Category List;
-$output['iserr'] 			= 0; // 0 is fail
+$output['iserr'] 			= 0; // 0 is fail,
 	$output['message'] 		= 'Invalid Entry';
 8. Type= getCartTotalDiscount
 Input:
-	user_id
+	user_id,
 Output:
 	$output['iserr'] 			= 1; // 1 is successfull
 	$output['message'] 		= 'Successfully Category List;
-$output['iserr'] 			= 0; // 0 is fail
+$output['iserr'] 			= 0; // 0 is fail,
 	$output['message'] 		= 'Invalid Entry';
 9. Type= getCartTotalTax
 Input:
-	user_id
+	user_id,
 Output:
-	$output['iserr'] 			= 1; // 1 is successfull
+	$output['iserr'] 			= 1; // 1 is successfull,
 	$output['message'] 		= 'Successfully Category List;
-$output['iserr'] 			= 0; // 0 is fail
+$output['iserr'] 			= 0; // 0 is fail,
 	$output['message'] 		= 'Invalid Entry';
 10. Type= addUser
 Input:
-	username_add
-	first_name
-	last_name
-dob
-mobile
+	username_add,
+	first_name,
+	last_name,
+	dob,
+	mobile,
 Output:
-	$output['iserr'] 			= 1; // 1 is successfull
+	$output['iserr'] 			= 1; // 1 is successfull,
 	$output['message'] 		= 'Successfully user  add;
-$output['iserr'] 			= 0; // 0 is fail
+$output['iserr'] 			= 0; // 0 is fail,
 	$output['message'] 		= 'Invalid Entry';
 
