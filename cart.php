@@ -18,9 +18,10 @@ if ($fileNameLast == 'y') {
 
 $method   = ($_POST) ? $_POST : $_GET;
 $cartType = $method['type'];
-
+$admin    = 1;
+$user     = 2;
 $userRole = $authenticate->authenticate($_POST['username']);
-if (($userRole == 1) || ($userRole == 2)) {
+if (($userRole == $admin) || ($userRole == $user)) {
     switch ($cartType) {
         case "addCart":
             $cart->addCart($method['name'], $method['total'], $method['total_discount'], $method['total_with_discount'], $method['total_tax'], $method['total_with_tax'], $method['grand_total'], $method['product_id'], $method['user_id']);
