@@ -27,7 +27,6 @@ class CartDetails
             "grand_total" => $grandTotal,
             "created_date" => date('Y-m-d H:i:s')
         );
-        $GLOBALS['db']->debug_mode=true;
         $cartId = $GLOBALS['db']->insert_get_id($cartField, $GLOBALS['table']);
         if ($cartId != '') {
             $output['iserr']   = 1;
@@ -52,6 +51,7 @@ class CartDetails
             "grand_total" => $grandTotal,
             "created_date" => date('Y-m-d H:i:s')
         );
+         $GLOBALS['db']->debug_mode=true;
         $count     = $GLOBALS['db']->update($cartField, "id=" . $cartUpdateId, $GLOBALS['table']);
         if ($count > 0) {
             $output['iserr']   = 1;
