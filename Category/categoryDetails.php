@@ -28,7 +28,7 @@ class CategoryDetails
             if($description=='')
                 $output['message'] = 'Invalid Entry Description';
             if($tax=='')
-                $output['message'] = 'Invalid Entry Description';
+                $output['message'] = 'Invalid Entry Tax';
         }
         echo json_encode($output);
         exit();
