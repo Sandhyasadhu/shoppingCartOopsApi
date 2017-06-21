@@ -6,7 +6,7 @@ class CategoryDetails
     public $tax;
     function addCategory($name, $description, $tax)
     {
-        if($name!=''|| $description!='' || $tax!=''){
+        if($name!='' && $description!='' && $tax!=''){
         $categoryField = array(
             "name" => $name,
             "description" => $description,
