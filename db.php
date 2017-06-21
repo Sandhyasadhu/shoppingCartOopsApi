@@ -52,7 +52,7 @@ class DB
         } else
             $this->rs = @$this->conn->query($SQL);
         
-        $this->recordcount = $this->rs->rowCount();
+        //$this->recordcount = $this->rs->rowCount();
         $this->lastquery   = $SQL;
         $this->lastquery   = $SQL;
         if ($this->debug_mode)
