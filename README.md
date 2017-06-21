@@ -2,9 +2,17 @@ Simple Shopping Cart API
 
 Please check the following documents:
 
-https://github.com/Sandhyasadhu/shoppingCartOopsApi/tree/shoppingapi 
+git hub url : https://github.com/Sandhyasadhu/shoppingCartOopsApi/tree/shoppingapi 
 Heroku url : https://sheltered-cove-38483.herokuapp.com/category.php
 
+test url:https://sheltered-cove-38483.herokuapp.com/category.php?type=readCategory&name=sandhya.B.S&description=test%20update&tax=50&username=bs.sandhya.in&categoryReadId=5
+ 
+ Default username:bs.sandhya.in(if u want add user directly type=addUser ,url : https://sheltered-cove-38483.herokuapp.com/cart.php?type=addUser&username=bs.sandhya.in)
+ 
+ Category URl :url : https://sheltered-cove-38483.herokuapp.com/category.php?type=addCategory&username=bs.sandhya.in
+ Product URl :url : https://sheltered-cove-38483.herokuapp.com/prouct.php?type=addProduct&username=bs.sandhya.in
+ Cart url :  https://sheltered-cove-38483.herokuapp.com/cart.php?type=addCart&username=bs.sandhya.in
+ 
 DB:POSTgresql
 
 authentication check:
