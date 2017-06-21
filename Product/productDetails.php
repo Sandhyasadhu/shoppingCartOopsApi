@@ -86,7 +86,7 @@ class ProductDetails
     function listProducts()
     {
         $productListAll = array();
-        $count          = $GLOBALS['db']->query("select * from " . $GLOBALS['table'] . " where 1 order by name asc");
+        $count          = $GLOBALS['db']->query("select * from " . $GLOBALS['table'] . "  order by name asc");
         while ($productList = $GLOBALS['db']->getrec()) {
             $productListAll[] = $productList;
         }
