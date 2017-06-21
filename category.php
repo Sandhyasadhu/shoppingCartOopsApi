@@ -17,7 +17,8 @@ if ($fileNameLast == 'y') {
 $method       = ($_POST) ? $_POST : $_GET;
 $categoryType = $method['type'];
 $userRole     = $authenticate->authenticate($method['username']);
-if ($userRole == 1) {
+$admin        = 1;
+if ($userRole == $admin) {
     switch ($categoryType) {
         case "addCategory":
             $category->addCategory($method['name'], $method['description'], $method['tax']);
