@@ -19,7 +19,7 @@ if ($fileNameLast == 'y') {
 $method   = ($_POST) ? $_POST : $_GET;
 $cartType = $method['type'];
 
-$userRole = $GLOBALS['authenticate']->authenticate($_POST['username']);
+$userRole = $authenticate->authenticate($_POST['username']);
 if (($userRole == 1) || ($userRole == 2)) {
     switch ($cartType) {
         case "addCart":
