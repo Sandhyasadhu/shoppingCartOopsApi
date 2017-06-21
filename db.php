@@ -52,8 +52,8 @@ class DB
             $qtm      = microtime(true) - $t1;
         } else
             $this->rs = @$this->conn->query($SQL);
-        
-        $this->recordcount = $this->rs->rowCount();
+        $this->stmt=$this->conn->query($SQL);
+        $this->recordcount =  $this->stmt->rowCount();
         $this->lastquery   = $SQL;
         $this->lastquery   = $SQL;
         if ($this->debug_mode)
