@@ -46,7 +46,7 @@ class CategoryDetails
     function deleteCategory($categoryDeleteId)
     {
         $GLOBALS['db']->debug_mode=true;
-        $count = $GLOBALS['db']->query("delete  from " . $GLOBALS['table'] . " where id='" . $categoryDeleteId . "' limit 1 ");
+        $count = $GLOBALS['db']->query("delete  from " . $GLOBALS['table'] . " where id='" . $categoryDeleteId . "'  ");
         if ($count > 0) {
             $output['iserr']   = 1;
             $output['message'] = 'Successfully Category Delete';
