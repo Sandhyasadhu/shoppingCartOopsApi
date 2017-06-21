@@ -3,6 +3,7 @@ $incpath = dirname(__FILE__) . '/Cart/';
 require_once($incpath . 'cartDetails.php');
 require_once('authentication.php');
 require_once('db.php');
+$authenticate = new Authentication();
 $fileName     = basename(__FILE__, ".php");
 $fileName     = $fileName;
 $fileNameLast = substr($fileName, -1);
