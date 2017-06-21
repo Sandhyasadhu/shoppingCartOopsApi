@@ -116,7 +116,7 @@ class CartDetails
     {
         $cartTable    = "carts";
         $productTable = "products";
-        $cartListAll  = array();
+        $cartListAll  = array();$GLOBALS['db']->debug_mode=true;
         $count        = $GLOBALS['db']->query("select cart.*,product.name from  $cartTable as cart,$productTable product where cart.user_id='" . $cartUserId . "' and cart.product_id = product.id order by cart.name asc");
         while ($cartList = $GLOBALS['db']->getrec()) {
             $cartListAll[] = $cartList;
