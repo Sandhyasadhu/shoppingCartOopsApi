@@ -32,11 +32,7 @@ class DB
         $this->totrecs     = null;
         $this->lastquery   = "";
         $this->debug_mode  = false;
-        $this->conn->query('SET names=utf8');
-        $this->conn->query('SET character_set_client=utf8');
-        $this->conn->query('SET character_set_connection=utf8');
-        $this->conn->query('SET character_set_results=utf8');
-        $this->conn->query('SET collation_connection=utf8_general_ci');
+       
     }
     
     function query($SQL)
@@ -48,12 +44,12 @@ class DB
             
             print_sql($SQL);
             $t1       = microtime(true);
-            $this->rs = @$this->conn->query($SQL);
+            $this->rs = $this->conn->query($SQL);
             $qtm      = microtime(true) - $t1;
         } else
-            $this->rs = @$this->conn->query($SQL);
+            $this->rs = $this->conn->query($SQL);
         
-        //$this->recordcount =  $this->rs->rowCount();
+        $this->recordcount =  $this->rs->rowCount();
         $this->lastquery   = $SQL;
         $this->lastquery   = $SQL;
         if ($this->debug_mode)
@@ -102,7 +98,7 @@ class DB
         if ($this->recordcount == 0)
             return false;
         
-        for ($r = 0; ($flds = @mysql_fetch_row($this->rs)); $r++)
+        for ($r = 0; ($flds = $this->rs->fetch( PDO::FETCH_NUM)); $r++)
             if (($r == $row) && isset($flds[$col]))
                 switch (mysql_field_type($this->rs, $col)) {
                     
