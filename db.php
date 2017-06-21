@@ -48,7 +48,7 @@ class DB
             
             print_sql($SQL);
             $t1       = microtime(true);
-            $this->rs = t$this->conn->query($SQL);
+            $this->rs = $this->conn->query($SQL);
             $qtm      = microtime(true) - $t1;
         } else
             $this->rs = $this->conn->query($SQL);
