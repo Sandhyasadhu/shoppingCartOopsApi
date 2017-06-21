@@ -6,6 +6,7 @@ class CategoryDetails
     public $tax;
     function addCategory($name, $description, $tax)
     {
+        if($name!=''|| $description!='' || $tax!=''){
         $categoryField = array(
             "name" => $name,
             "description" => $description,
@@ -19,6 +20,15 @@ class CategoryDetails
         } else {
             $output['iserr']   = 0;
             $output['message'] = 'Invalid Entry';
+        }
+        }else{
+            $output['iserr']   = 0;
+            if($name=='')
+                $output['message'] = 'Invalid Entry Name';
+            if($description=='')
+                $output['message'] = 'Invalid Entry Description';
+            if($tax=='')
+                $output['message'] = 'Invalid Entry Description';
         }
         echo json_encode($output);
         exit();
