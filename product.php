@@ -17,7 +17,7 @@ if ($fileNameLast == 'y') {
 
 $method      = ($_POST) ? $_POST : $_GET;
 $productType = $method['type'];
-$userRole    = $authenticate->authenticate($_POST['username']);
+$userRole    = $authenticate->authenticate($method['username']);
 if ($userRole == 1) {
     switch ($productType) {
         case "addProduct":
