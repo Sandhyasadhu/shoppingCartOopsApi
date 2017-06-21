@@ -13,12 +13,12 @@ test url:https://sheltered-cove-38483.herokuapp.com/category.php?type=readCatego
  Product URl :url : https://sheltered-cove-38483.herokuapp.com/prouct.php?type=addProduct&username=bs.sandhya.in
  Cart url :  https://sheltered-cove-38483.herokuapp.com/cart.php?type=addCart&username=bs.sandhya.in
  
-DB:POSTgresql
+DB : POSTgresql
 
-authentication check:
+authentication check :
 input: 
 username,
-Output:
+Output :
 	$output['iserr'] 			= 0; // 0 is fail condition user cannot match,
 	$output['message'] 			= 'Invalid User',
 Rules: category and product process by only admin(role_id=1),
@@ -85,7 +85,7 @@ Output:
 	$output['message'] 		= 'Successfully Product Add',
 $output['iserr'] 			= 0; // 0 is fail,
 	$output['message'] 		= 'Invalid Entry',
-2. Type= updateProduct
+2. Type = updateProduct
 Input:
 	name,
 	description,
@@ -93,16 +93,16 @@ Input:
 	discount,
 	productUpdateId,
 Output:
-	$output['iserr'] 			= 1; // 1 is successfull,
+	$output['iserr'] 		= 1; // 1 is successfull,
 	$output['message'] 		= 'Successfully Product Update,
 $output['iserr'] 			= 0; // 0 is fail,
 	$output['message'] 		= 'Invalid Entry',
 
-3. Type= deleteProduct
+3. Type = deleteProduct
 Input:
 	productDeleteId
 Output:
-	$output['iserr'] 			= 1; // 1 is successfull
+	$output['iserr'] 		= 1; // 1 is successfull
 	$output['message'] 		= 'Successfully Product Delete;
 $output['iserr'] 			= 0; // 0 is fail
 	$output['message'] 		= 'Invalid Entry';
@@ -110,7 +110,7 @@ $output['iserr'] 			= 0; // 0 is fail
 Input:
 	productReadId,
 Output:
-	$output['iserr'] 			= 1; // 1 is successfull,
+	$output['iserr'] 		= 1; // 1 is successfull,
 	$output['message'] 		= 'Successfully Product  List,
 $output['iserr'] 			= 0; // 0 is fail,
 	$output['message'] 		= 'Invalid Entry',
@@ -118,7 +118,7 @@ $output['iserr'] 			= 0; // 0 is fail,
 Input:
 	null
 Output:
-	$output['iserr'] 			= 1; // 1 is successfull,
+	$output['iserr'] 		= 1; // 1 is successfull,
 	$output['message'] 		= 'Successfully Category List,
 $output['iserr'] 			= 0; // 0 is fail,
 	$output['message'] 		= 'Invalid Entry',
@@ -137,7 +137,7 @@ Input:
 	product_id,
 	user_id,
 Output:
-	$output['iserr'] 			= 1; // 1 is successfull,
+	$output['iserr'] 		= 1; // 1 is successfull,
 	$output['message'] 		= 'Successfully Cart Add',
 $output['iserr'] 			= 0; // 0 is fail,
 	$output['message'] 		= 'Invalid Entry';
@@ -152,7 +152,7 @@ Input:
 	grand_total,
 	cartUpdateId,
 Output:
-	$output['iserr'] 			= 1; // 1 is successfull,
+	$output['iserr'] 		= 1; // 1 is successfull,
 	$output['message'] 		= 'Successfully Cart Update;
 $output['iserr'] 			= 0; // 0 is fail,
 	$output['message'] 		= 'Invalid Entry';
@@ -161,7 +161,7 @@ $output['iserr'] 			= 0; // 0 is fail,
 Input:
 	cartDeleteId,
 Output:
-	$output['iserr'] 			= 1; // 1 is successfull,
+	$output['iserr'] 		= 1; // 1 is successfull,
 	$output['message'] 		= 'Successfully Cart Delete;
 $output['iserr'] 			= 0; // 0 is fail,
 	$output['message'] 		= 'Invalid Entry';
@@ -169,7 +169,7 @@ $output['iserr'] 			= 0; // 0 is fail,
 Input:
 	cartReadId,
 Output:
-	$output['iserr'] 			= 1; // 1 is successfull,
+	$output['iserr'] 		= 1; // 1 is successfull,
 	$output['message'] 		= 'Successfully Cart  List;
 $output['iserr'] 			= 0; // 0 is fail,
 	$output['message'] 		= 'Invalid Entry';
@@ -177,7 +177,7 @@ $output['iserr'] 			= 0; // 0 is fail,
 Input:
 	null,
 Output:
-	$output['iserr'] 			= 1; // 1 is successfull,
+	$output['iserr'] 		= 1; // 1 is successfull,
 	$output['message'] 		= 'Successfully Category List;
 $output['iserr'] 			= 0; // 0 is fail,
 	$output['message'] 		= 'Invalid Entry';
@@ -186,7 +186,7 @@ $output['iserr'] 			= 0; // 0 is fail,
 Input:
 	user_id,
 Output:
-	$output['iserr'] 			= 1; // 1 is successfull,
+	$output['iserr'] 		= 1; // 1 is successfull,
 	$output['message'] 		= 'Successfully Category List;
 $output['iserr'] 			= 0; // 0 is fail,
 	$output['message'] 		= 'Invalid Entry';
@@ -195,7 +195,7 @@ $output['iserr'] 			= 0; // 0 is fail,
 Input:
 	user_id,
 Output:
-	$output['iserr'] 			= 1; // 1 is successfull,
+	$output['iserr'] 		= 1; // 1 is successfull,
 	$output['message'] 		= 'Successfully Category List;
 $output['iserr'] 			= 0; // 0 is fail,
 	$output['message'] 		= 'Invalid Entry';
@@ -203,7 +203,7 @@ $output['iserr'] 			= 0; // 0 is fail,
 Input:
 	user_id,
 Output:
-	$output['iserr'] 			= 1; // 1 is successfull
+	$output['iserr'] 		= 1; // 1 is successfull
 	$output['message'] 		= 'Successfully Category List;
 $output['iserr'] 			= 0; // 0 is fail,
 	$output['message'] 		= 'Invalid Entry';
@@ -211,7 +211,7 @@ $output['iserr'] 			= 0; // 0 is fail,
 Input:
 	user_id,
 Output:
-	$output['iserr'] 			= 1; // 1 is successfull,
+	$output['iserr'] 		= 1; // 1 is successfull,
 	$output['message'] 		= 'Successfully Category List;
 $output['iserr'] 			= 0; // 0 is fail,
 	$output['message'] 		= 'Invalid Entry';
@@ -223,7 +223,7 @@ Input:
 	dob,
 	mobile,
 Output:
-	$output['iserr'] 			= 1; // 1 is successfull,
+	$output['iserr'] 		= 1; // 1 is successfull,
 	$output['message'] 		= 'Successfully user  add;
 $output['iserr'] 			= 0; // 0 is fail,
 	$output['message'] 		= 'Invalid Entry';
