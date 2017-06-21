@@ -25,7 +25,8 @@ class DB
     function DB($db = DB_DATABASE, $username = DB_USERNAME, $password = DB_PASSWORD, $host = DB_HOST)
     {
         $this->conn = new PDO("pgsql:host=$host;dbname=$db", $username, $password) or die("<h3 align=\"center\" style=\"color:red\"> Please try again after 2 min. </h3>" . mysql_error($this->conn)); //Unable to Connect to MySQL Server
-        $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION,PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8");
+        //$this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION,PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8");
+        $this->query('SET NAMES utf8'); 
         $this->rs          = null;
         $this->recordcount = null;
         $this->totrecs     = null;
@@ -52,7 +53,7 @@ class DB
         } else
             $this->rs = @$this->conn->query($SQL);
         
-        $this->recordcount =  $this->rs->rowCount();
+        //$this->recordcount =  $this->rs->rowCount();
         $this->lastquery   = $SQL;
         $this->lastquery   = $SQL;
         if ($this->debug_mode)
