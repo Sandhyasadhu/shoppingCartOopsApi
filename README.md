@@ -1,9 +1,13 @@
-```html
+
 Simple Shopping Cart API
 
 Please check the following documents:
-Git hub url : <a href='https://github.com/Sandhyasadhu/shoppingCartOopsApi/tree/shoppingapi'>Github</>
-Heroku url  : <a href='https://sheltered-cove-38483.herokuapp.com/category.php'>Shopping Cart Api</>
+  
+  Git hub url : https://github.com/Sandhyasadhu/shoppingCartOopsApi/tree/shoppingapi
+
+  Heroku url  : https://sheltered-cove-38483.herokuapp.com/category.php
+
+```html
 
 DB:Postgresql
 
