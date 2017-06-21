@@ -30,15 +30,15 @@ class ProductDetails
         }else{
              $output['iserr']   = 0;
             if($name=='')
-                $output['message'] = 'Invalid Entry Name';
+                $output['message'][] = 'Invalid Entry Name';
             if($description=='')
-                $output['message'] = 'Invalid Entry Description';
+                $output['message'][] = 'Invalid Entry Description';
             if($price=='')
-                $output['message'] = 'Invalid Entry Price';
+                $output['message'][] = 'Invalid Entry Price';
             if($discount=='')
-                $output['message'] = 'Invalid Entry Discount';
+                $output['message'][] = 'Invalid Entry Discount';
             if($categoryId=='')
-                $output['message'] = 'Invalid Entry CategoryId';
+                $output['message'][] = 'Invalid Entry CategoryId';
             
          
         }
