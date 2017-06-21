@@ -2,8 +2,8 @@
 Simple Shopping Cart API
 
 Please check the following documents:
-Git hub url : https://github.com/Sandhyasadhu/shoppingCartOopsApi/tree/shoppingapi
-Heroku url  : https://sheltered-cove-38483.herokuapp.com/category.php
+Git hub url : <a href='https://github.com/Sandhyasadhu/shoppingCartOopsApi/tree/shoppingapi'>Github</>
+Heroku url  : <a href='https://sheltered-cove-38483.herokuapp.com/category.php'>Shopping Cart Api</>
 
 DB:Postgresql
 
@@ -111,19 +111,19 @@ Method:Product
   Input:
     productReadId
   Output:
-    $output['iserr']		= 1; // 1 is successfull
-    $output['message']	=	'Successfully Product  List;
-    $output['iserr']		=	 0; // 0 is fail
-    $output['message']	= 'Invalid Entry';
+    $output['iserr']    = 1; // 1 is successfull
+    $output['message']  =	'Successfully Product  List;
+    $output['iserr']    =	 0; // 0 is fail
+    $output['message']  = 'Invalid Entry';
 
 5. Type= listProducts
   Input:
     null
   Output:
-    $output['iserr']		= 1; // 1 is successfull
-    $output['message']	= 'Successfully Category List;
-    $output['iserr']		= 0; // 0 is fail
-    $output['message']	= 'Invalid Entry';
+    $output['iserr']    = 1; // 1 is successfull
+    $output['message']  = 'Successfully Category List;
+    $output['iserr']    = 0; // 0 is fail
+    $output['message']  = 'Invalid Entry';
 
 
 Method:Cart
@@ -140,10 +140,10 @@ Method:Cart
     product_id
     user_id
   Output:
-    $output['iserr']		= 1; // 1 is successfull
-    $output['message']	= 'Successfully Cart Add';
-    $output['iserr']		= 0; // 0 is fail
-    $output['message']	= 'Invalid Entry';
+    $output['iserr']    = 1; // 1 is successfull
+    $output['message']  = 'Successfully Cart Add';
+    $output['iserr']    = 0; // 0 is fail
+    $output['message']  = 'Invalid Entry';
 
 2. Type= updateCart
   Input:
