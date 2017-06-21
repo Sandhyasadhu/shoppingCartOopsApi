@@ -12,7 +12,6 @@ class CategoryDetails
             "tax" => $tax,
             "created_date" => date('Y-m-d H:i:s')
         );
-        $GLOBALS['db']->debug_mode=true;
         $categoryId    = $GLOBALS['db']->insert_get_id($categoryField, $GLOBALS['table']);
         if ($categoryId != '') {
             $output['iserr']   = 1;
@@ -81,6 +80,7 @@ class CategoryDetails
     
     function listCategories()
     {
+        $GLOBALS['db']->debug_mode=true;
         $categoryListAll = array();
         $count           = $GLOBALS['db']->query("select * from " . $GLOBALS['table'] . " where 1 order by  name asc");
         while ($categoryList = $GLOBALS['db']->getrec()) {
