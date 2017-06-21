@@ -20,8 +20,8 @@ Method:Category
 Type=addCategory
 Input:
 	name
-description
-tax
+	description
+	tax
 Output:
 	$output['iserr'] 			= 1; // 1 is successfull
 	$output['message'] 		= 'Successfully Category Add';
