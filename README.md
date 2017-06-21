@@ -9,6 +9,7 @@ Please check the following documents:
  
 
 CATEGORY:
+
   AddCategory    : https://sheltered-cove-38483.herokuapp.com/category.php?type=addCategory&username=bs.sandhya.in
   
   UpdateCategory : https://sheltered-cove-38483.herokuapp.com/category.php?type=updateCategory&username=bs.sandhya.in
@@ -18,6 +19,7 @@ CATEGORY:
   ListCategories : https://sheltered-cove-38483.herokuapp.com/category.php?type=listCategories&username=bs.sandhya.in
 
 Product:
+
    AddProduct    : https://sheltered-cove-38483.herokuapp.com/category.php?type=addProduct&username=bs.sandhya.in
   
    UpdateProduct : https://sheltered-cove-38483.herokuapp.com/category.php?type=updateProduct&username=bs.sandhya.in
@@ -27,6 +29,7 @@ Product:
    ListProducts  : https://sheltered-cove-38483.herokuapp.com/category.php?type=listProducts&username=bs.sandhya.in 
 
 CART:  
+
   AddCart    : https://sheltered-cove-38483.herokuapp.com/category.php?type=addCart&username=bs.sandhya.in
   
   UpdateCart : https://sheltered-cove-38483.herokuapp.com/category.php?type=updateCart&username=bs.sandhya.in
