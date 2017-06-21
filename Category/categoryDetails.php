@@ -24,11 +24,11 @@ class CategoryDetails
         }else{
             $output['iserr']   = 0;
             if($name=='')
-                $output['message'] = 'Invalid Entry Name';
+                $output['message']['Name'] = 'Invalid Entry Name';
             if($description=='')
-                $output['message'] = 'Invalid Entry Description';
+                $output['message']['Description'] = 'Invalid Entry Description';
             if($tax=='')
-                $output['message'] = 'Invalid Entry Tax';
+                $output['message']['Tax'] = 'Invalid Entry Tax';
         }
         echo json_encode($output);
         exit();
